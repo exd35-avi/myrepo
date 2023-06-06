@@ -35,7 +35,7 @@ node index.js
 curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash –
 sudo apt install nodejs
 git clone https://github.com/exd35-avi/myrepo.git
-Now, give the Username and Password(Token)
+----Now, give the Username and Password(Token)
 cd Awsproject2
 npm install
 node index.js
