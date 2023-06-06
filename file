@@ -1,0 +1,41 @@
+cd /etc/nginx/sites-available/
+
+sudo nano default
+
+Next, Press “Ctrl+X  Y Enter” respectively to exit and save your changes.
+f) Next, Enter the following command:
+sudo systemctl restart nginx
+
+5. Now run the Public IPv4 Address in a web browser without using the port number.
+
+
+location / {
+proxy_pass http://localhost:4000;
+proxy_http_version 1.1;
+proxy_set_header Upgrade $http_upgrade;
+proxy_set_header Connection 'Upgrade';
+proxy_set_header Host $host;
+proxy_cache_bypass $http_upgrade;
+}
+
+#!/bin/bash
+apt-get update
+apt-get install -y nginx
+systemctl start nginx
+systemctl enable nginx
+apt-get install -y git
+curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+apt-get install -y nodejs
+git clone Repo link
+cd Repo name
+npm install
+node index.js
+
+
+curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash –
+sudo apt install nodejs
+git clone https://github.com/exd35-avi/myrepo.git
+Now, give the Username and Password(Token)
+cd Awsproject2
+npm install
+node index.js
